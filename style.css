@@ -41,8 +41,11 @@ header{
     display: flex;
 }
 
-.main{
-    width: 100%;
+section{
+    margin: auto;
+    min-width: 400px;
+    max-width: 1000px;
+    background-color: #0077b6;
 }
 
 .main > .security{
