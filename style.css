@@ -2,14 +2,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@100;200;400&display=swap');
 
     /* Cores
-    #0d1b2a
-    #1b263b
-    #415a77
-    #778da9
-    #e0e1dd */
+    #03045e
+    #0077b6
+    #00b4d8
+    #90e0ef
+    #caf0f8 */
 
 *{
-    margin: 0;
-    padding: 0px;
     font-family: 'Poppins', 'sans-serif';
+}
+
+body{
+    background-color:  #e0e1dd;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #03045e;
+}
+
+.title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+}
+
+h1{
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+h1 > a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding-right: 15px;
+}
+
+ul > a{
+    position: relative;
+    color: aqua;
+    font-size: 18px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+  ul > a:after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background-color: aliceblue;
+    transition: 1s;
+    
+}
+
+ul > a:after{
+    left: 0;
+    bottom: -10px;
+}
+
+ul > a:hover:after{
+    width: 100%;
 }
