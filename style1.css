@@ -35,7 +35,6 @@ header{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
 }
 
 nav{
@@ -71,7 +70,7 @@ nav ul a:hover::after{
 
 }
 
-section h1, p{
+.banner h1, p{
     color: white;
 }
 
@@ -129,6 +128,7 @@ section h1, p{
 
 .more .more-text h1{
     font-size: 56px;
+    text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
 }
 
 .more .more-text p{
@@ -143,8 +143,14 @@ section h1, p{
     width: 100%;
 }
 
+.serviços{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .serviços h1{
-    color: black;
+    color: #ffffff;
     text-align: center;
     font-size: 56px;
 }
@@ -152,6 +158,7 @@ section h1, p{
 .serviços p{
     margin-bottom: 20px;
     text-align: center;
+    color: #ffff;
 }
 
 .cards{
@@ -159,20 +166,25 @@ section h1, p{
     justify-content: center;
 }
 
-.card-item img{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    margin: 10px auto;
+.card-item p{
+    color: #7f7d9e;
+}
+
+.card-item i{
+    font-size: 60px;
+    color: #7f7d9e;
 }
 
 .serviços .card-item{
-    background-color: #03055e41;
+    background-color: #03055e8f;
     margin: 15px;
     padding-top: 15px;
     border-radius: 14px;
     text-align: center;
+
     width: 350px;
+    box-shadow: 1px 1px 10px 1px #0b0b3096;
+    transition: 0.2s;
 }
 
 .serviços .card-item .service{
@@ -184,4 +196,42 @@ section h1, p{
 .serviços .card-item .service-description{
     font-size: 15px;
     padding: 0px 15px;
+}
+
+.serviços .card-item:hover{
+    background-color: #0b0b30;
+    margin-top: -5px;
+}
+
+.serviços .card-item:hover .service,
+.serviços .card-item:hover i,
+.serviços .card-item:hover .service-description{
+    color: white;
+    transition: 0.3;
+}
+
+.clientes h1, p{
+    color: black;
+    text-align: center;
+}
+
+.clientes h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.clientes p{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+div img{
+    width: 200px;
+
+}
+
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
