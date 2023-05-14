@@ -25,7 +25,8 @@ header{
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: #03045e;
+    background-image: url(imagens/cyber-security-banner.jpg);
+    height: 200px;
 }
 
 .title{
@@ -68,7 +69,7 @@ ul > a{
     height: 1px;
     width: 0px;
     background-color: aliceblue;
-    transition: 1s;
+    transition: .5s;
     
 }
 
@@ -79,4 +80,8 @@ ul > a:after{
 
 ul > a:hover:after{
     width: 100%;
+}
+
+.banner{
+    display: flex;
 }
