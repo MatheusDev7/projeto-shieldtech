@@ -128,20 +128,24 @@ nav ul a:hover::after{
 
 .more-text h1, p{
     color: black;
+    text-align: left;
 }
 
 .more .more-text{
     width: 50%;
-    padding-left: 40px;
+    padding-left: 0 40px;
 }
 
 .more .more-text h1{
     font-size: 56px;
     text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
+    
 }
 
 .more .more-text p{
     font-size: 18px;
+    margin: 5px 0 10px 0;
+    text-align: left;
 }
 
 .more .more-img{
@@ -219,7 +223,7 @@ nav ul a:hover::after{
     transition: 0.3;
 }
 
-.clientes h1, p{
+.clientes .container h1, p{
     color: black;
     text-align: center;
 }
@@ -243,4 +247,30 @@ div img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.footer{
+    background-color: #0b0b30;
+    text-align: center;
+    color: white;
+}
+
+.footer i{
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer i{
+    color: #0b0b30;
+    font-size: 30px;
+}
+.footer p{
+    margin-top: 10px;
 }
