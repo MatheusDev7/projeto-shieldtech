@@ -79,6 +79,19 @@ nav ul a:hover::after{
 
 }
 
+nav .menu-icon{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
 .banner h1, p{
     color: white;
 }
@@ -121,54 +134,54 @@ nav ul a:hover::after{
     margin: 18px 0px;
 }
 
-.more .container{
+#sobre .container{
     display: flex;
     align-items: center;
 }
 
-.more-text h1, p{
+#sobre .more-text h1, p{
     color: black;
     text-align: left;
 }
 
-.more .more-text{
+#sobre .more-text{
     width: 50%;
     padding-left: 0 40px;
 }
 
-.more .more-text h1{
+#sobre .more-text h1{
     font-size: 56px;
     text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
     
 }
 
-.more .more-text p{
+#sobre .more-text p{
     font-size: 18px;
     margin: 5px 0 10px 0;
     text-align: left;
 }
 
-.more .more-img{
+#sobre .more-img{
     width: 50%;
 }
 
-.more .more-img img{
+#sobre .more-img img{
     width: 100%;
 }
 
-.serviços{
+#serviços{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.serviços h1{
+#serviços h1{
     color: #ffffff;
     text-align: center;
     font-size: 56px;
 }
 
-.serviços p{
+#serviços p{
     margin-bottom: 20px;
     text-align: center;
     color: #ffff;
@@ -179,16 +192,13 @@ nav ul a:hover::after{
     justify-content: center;
 }
 
-.card-item p{
-    color: #7f7d9e;
-}
 
 .card-item i{
     font-size: 60px;
     color: #7f7d9e;
 }
 
-.serviços .card-item{
+#serviços .card-item{
     background-color: #03055e8f;
     margin: 15px;
     padding-top: 15px;
@@ -200,25 +210,27 @@ nav ul a:hover::after{
     transition: 0.2s;
 }
 
-.serviços .card-item .service{
+#serviços .card-item .service{
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px;
+    color: #7f7d9e;
 }
 
-.serviços .card-item .service-description{
+#serviços .card-item .service-description{
     font-size: 15px;
     padding: 0px 15px;
+    color: #7f7d9e;
 }
 
-.serviços .card-item:hover{
+#serviços .card-item:hover{
     background-color: #0b0b30;
     margin-top: -5px;
 }
 
-.serviços .card-item:hover .service,
-.serviços .card-item:hover i,
-.serviços .card-item:hover .service-description{
+#serviços .card-item:hover .service,
+#serviços .card-item:hover i,
+#serviços .card-item:hover .service-description{
     color: white;
     transition: 0.3;
 }
@@ -260,17 +272,16 @@ div img{
     background-color: white;
     padding: 10px;
     margin: 3px;
-    border-radius: 100%;
+    border-radius: 10px;
 }
 
 .footer i{
     color: #0b0b30;
     font-size: 25px;
-    margin: 0px 15px;
+    margin: 15px;
 }
 
 .footer i:hover{
-    font-size: 30px;
     transition: .22s;
     box-shadow: 0px 0px 10px 3px white;
 }
@@ -279,4 +290,48 @@ div img{
     margin-top: 20px;
     color: white;
     font-size: 20px;
+}
+
+.links > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0b0b30;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a{
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+
+    nav .menu-icon{
+        display: block;
+    }
+
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 29px;
+        cursor: pointer;
+    }
 }
