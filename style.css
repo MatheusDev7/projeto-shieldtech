@@ -7,6 +7,10 @@
     font-family: 'Poppins', 'Sans-serif';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #ffff;
 }
@@ -271,14 +275,14 @@ div img{
     font-size: 19px;
     background-color: white;
     padding: 10px;
-    margin: 3px;
     border-radius: 10px;
-}
-
-.footer i{
     color: #0b0b30;
     font-size: 25px;
-    margin: 15px;
+    margin: 0px 15px;
+}
+
+.links h1{
+    display: inline-flex;
 }
 
 .footer i:hover{
