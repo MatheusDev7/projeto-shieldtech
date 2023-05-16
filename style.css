@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body{
+    overflow-x: hidden !important;
+}
+
 body{
     background-color: #ffff;
 }
@@ -61,15 +65,15 @@ nav ul{
     align-items: center;
 }
 
-nav ul a{
+nav ul > a{
     color: white;
     margin: 0 25px;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
 }
 
-nav ul a:not(.btn)::after{
+nav > ul > a:not(.btn)::after{
     content: "";
     background-color: white;
     height: 2px;
@@ -114,7 +118,7 @@ nav .close-icon{
 }
 
 .btn:hover{
-    background-color: #3580db;
+    background-color: #275d9e;
 }
 
 .banner{
@@ -174,9 +178,14 @@ nav .close-icon{
     width: 100%;
 }
 
+#sobre .more-text2 h1, p{
+    color: black;
+    text-align: left;
+}
+
 #sobre .more-text2{
     width: 50%;
-    padding: 0 40px;
+    padding-left: 0 40px;
 }
 
 #sobre .more-text2 p{
@@ -185,21 +194,51 @@ nav .close-icon{
     text-align: justify;
 }
 
-#sobre .more-img2{
-    width: 50%;
-    
-}
 
-#sobre .more-img2 img{
+#sobre .more-img2 .qrcode{
     width: 80%;
     box-shadow: 1px 1px 20px 2px black;
     border-radius: 10px;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-bottom: 50px;
 }
 
 .qrcode{
     width: 300px;
+}
+
+#sobre .container{
+    display: flex;
+    align-items: center;
+}
+
+#sobre .more-tex3 h1, p{
+    color: black;
+}
+
+#sobre .more-tex3{
+    width: 50%;
+    padding-left: 0 40px;
+}
+
+#sobre .more-text3 h1{
+    font-size: 56px;
+    text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
+    
+}
+
+#sobre .more-text3 p{
+    font-size: 22px;
+    margin: 5px 0 10px 0;
+    text-align: left;
+}
+
+#sobre .more-img3{
+    width: 50%;
+}
+
+#sobre .more-img3 img{
+    width: 100%;
 }
 
 #serviços{
@@ -287,7 +326,6 @@ nav .close-icon{
 
 div img{
     width: 200px;
-
 }
 
 .clientes .container div{
@@ -333,7 +371,109 @@ div img{
     font-weight: bolder;
 }
 
-@media(max-width: 830px){
+@media(max-width:500px){ 
+    .banner-text h1{
+        font-size: 70px;
+    }
+
+    .banner-text p{
+        font-size: 16px;
+    }
+
+    #sobre .container{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobre .more-text {
+        width: 100%;
+    }
+
+    #sobre .more-text h1{
+        text-align: center;
+    }
+
+    #sobre .more-text p{
+        font-size: 20px;
+        padding: 40px 0px;
+        text-align: center;
+    }
+
+    #sobre .more-img{
+        width: 100%;
+    }
+
+    #sobre .more-img2 .qrcode{
+        width: 70%;
+        margin-left: 13px;
+    }
+
+    #sobre .more-text2 {
+        width: 100%;
+    }
+
+    #sobre .more-text2 p{
+        text-align: center;
+        font: 20px;
+        padding: 40px 0px;
+    }
+
+    .cards{
+        display: block;
+        justify-content: center;
+    }
+
+    #serviços .card-item{
+        width: 400px;
+    }
+
+    #serviços .card-item .service-description {
+        font-size: 18px;
+        padding-bottom: 20px;
+        color: #a1a0b4;
+    }
+
+    #serviços .card-item:hover{
+        background-color: #03055e;
+        margin: 0px;
+    }
+
+    div img{
+        width: 250px;
+        margin-top: 15px;
+    }
+
+    .clientes .container div{
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    #sobre .more-text3 h1{
+        margin-bottom: 20px;
+    }
+    
+    #sobre .more-text3 p{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #sobre .more-img3{
+        width: 100%;
+    }
+
+    .btn{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    
+}
+
+@media(max-width: 700px){
     .ul{
         position: fixed;
         top: 0;
