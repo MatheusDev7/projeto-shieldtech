@@ -49,6 +49,7 @@ p{
 
 header{
     padding-top: 40px;
+    background-image: url(imagens/tech.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -372,11 +373,8 @@ div img{
 }
 
 @media(max-width:500px){ 
-    header{
-        background-image: url(imagens/tech.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+    header .container{
+        
     }
     .banner-text h1{
         font-size: 55px;
