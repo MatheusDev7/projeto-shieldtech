@@ -110,6 +110,7 @@ nav .close-icon{
     display: inline-block;
     text-decoration: none;
     transition: 0.2s;
+    margin-top: 20px;
 }
 
 .btn:hover{
@@ -160,9 +161,9 @@ nav .close-icon{
 }
 
 #sobre .more-text p{
-    font-size: 18px;
+    font-size: 22px;
     margin: 5px 0 10px 0;
-    text-align: left;
+    text-align: justify;
 }
 
 #sobre .more-img{
@@ -173,16 +174,45 @@ nav .close-icon{
     width: 100%;
 }
 
+#sobre .more-text2{
+    width: 50%;
+    padding: 0 40px;
+}
+
+#sobre .more-text2 p{
+    font-size: 22px;
+    margin: 5px 0 10px 0;
+    text-align: justify;
+}
+
+#sobre .more-img2{
+    width: 50%;
+    
+}
+
+#sobre .more-img2 img{
+    width: 80%;
+    box-shadow: 1px 1px 20px 2px black;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+.qrcode{
+    width: 300px;
+}
+
 #serviços{
     background-position: center;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #serviços h1{
     color: #ffffff;
     text-align: center;
     font-size: 56px;
+    margin-bottom: 20px;
 }
 
 #serviços p{
@@ -199,36 +229,37 @@ nav .close-icon{
 
 .card-item i{
     font-size: 60px;
-    color: #7f7d9e;
+    color: #a1a0b4;
+    margin-bottom: 10px;
 }
 
 #serviços .card-item{
-    background-color: #03055e8f;
+    background-color: #03055ecb;
     margin: 15px;
     padding-top: 15px;
     border-radius: 14px;
     text-align: center;
 
     width: 350px;
-    box-shadow: 1px 1px 10px 1px #0b0b3096;
+    box-shadow: 1px 1px 10px 1px #0b0b30be;
     transition: 0.2s;
 }
 
 #serviços .card-item .service{
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: bolder;
+    font-size: 22px;
     margin-bottom: 15px;
-    color: #7f7d9e;
+    color: #a1a0b4;
 }
 
 #serviços .card-item .service-description{
-    font-size: 15px;
+    font-size: 18px;
     padding: 0px 15px;
-    color: #7f7d9e;
+    color: #a1a0b4;
 }
 
 #serviços .card-item:hover{
-    background-color: #0b0b30;
+    background-color: #03055e;
     margin-top: -5px;
 }
 
@@ -236,7 +267,7 @@ nav .close-icon{
 #serviços .card-item:hover i,
 #serviços .card-item:hover .service-description{
     color: white;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .clientes .container h1, p{
@@ -334,8 +365,8 @@ div img{
     nav .close-icon{
         display: block;
         position: absolute;
-        top: 45px;
-        right: 29px;
+        top: 44px;
+        right: 32px;
         cursor: pointer;
     }
 }
