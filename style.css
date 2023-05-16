@@ -374,7 +374,10 @@ div img{
 
 @media(max-width:500px){ 
     header .container{
-        
+        background-image: url(imagens/tech.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
     }
     .banner-text h1{
         font-size: 55px;
