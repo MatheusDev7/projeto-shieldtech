@@ -28,6 +28,10 @@ body{
     transition: 1s;
 }
 
+h1{
+    text-shadow:rgba(0, 0, 0, 0.26) 0.1em 0.1em 0.2em;
+}
+
 h1 a {
     color: white;
     text-decoration: none;
@@ -49,7 +53,6 @@ p{
 
 header{
     padding-top: 40px;
-    background-image: url(imagens/tech.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -161,8 +164,6 @@ nav .close-icon{
 
 #sobre .more-text h1{
     font-size: 56px;
-    text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
-    
 }
 
 #sobre .more-text p{
@@ -190,6 +191,8 @@ nav .close-icon{
 }
 
 #sobre .more-text2 p{
+    display: flex;
+    align-items: center;
     font-size: 22px;
     margin: 5px 0 10px 0;
     text-align: justify;
@@ -197,15 +200,19 @@ nav .close-icon{
 
 
 #sobre .more-img2 .qrcode{
-    width: 80%;
-    box-shadow: 1px 1px 20px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.507);
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 70px;
     margin-bottom: 50px;
 }
 
-.qrcode{
-    width: 300px;
+#sobre .more-img2{
+    width: 50%;
 }
 
 #sobre .container{
@@ -224,8 +231,6 @@ nav .close-icon{
 
 #sobre .more-text3 h1{
     font-size: 56px;
-    text-shadow:rgba(0, 0, 0, 0.397) 0.1em 0.1em 0.2em;
-    
 }
 
 #sobre .more-text3 p{
@@ -282,7 +287,7 @@ nav .close-icon{
 
     width: 350px;
     box-shadow: 1px 1px 10px 1px #0b0b30be;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #serviços .card-item .service{
@@ -373,12 +378,19 @@ div img{
 }
 
 @media(max-width:500px){ 
-    header .container{
-        background-image: url(imagens/tech.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
+    header {
+        padding: 0;
     }
+
+    header .container{
+        background-color: #0b0b30;
+        padding: 0 5%;
+    }
+
+    header .container nav{
+        padding-top: 40px;
+    }
+
     .banner-text h1{
         font-size: 55px;
     }
@@ -411,9 +423,14 @@ div img{
         width: 100%;
     }
 
+    #sobre .more-img2{
+        display: block;
+        margin: auto;
+    }
+
     #sobre .more-img2 .qrcode{
-        width: 70%;
-        margin-left: 11px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     #sobre .more-text2 {
@@ -424,6 +441,7 @@ div img{
         text-align: center;
         font: 20px;
         padding: 40px 0px;
+        margin-top: 25px;
     }
 
     .cards{
@@ -432,16 +450,18 @@ div img{
     }
 
     #serviços {
-        background-image: url(imagens/tech2.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+        padding: 0px ;
+    }
+
+    #serviços .container{
+        background-color: #0b0b30;
+        padding: 20px 5%;
     }
 
     #serviços .card-item{
         width: 400px;
-       /*  align-items: center; */
-       background-color: #03055e;
+        align-items: center;
+        background-color: #03055e;
     }
 
     #serviços .card-item i{
@@ -470,6 +490,10 @@ div img{
         margin-top: 15px;
     }
 
+    .clientes .container p{
+        padding: 20px 0px;
+    }
+
     .clientes .container div{
         display: block;
         line-height: 50px;
@@ -477,7 +501,7 @@ div img{
     }
 
     #sobre .more-text3 h1{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
     #sobre .more-text3 p{
@@ -487,6 +511,7 @@ div img{
 
     #sobre .more-img3{
         width: 100%;
+        margin-top: 20px;
     }
 
     .btn{
