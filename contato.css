@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: #ffff;
+}
+
+.logo{
+    font-size: 33px;
+}
+
+.logo:hover{
+    font-size: 35px;
+    transition: 1s;
+}
+
+h1{
+    text-shadow:rgba(0, 0, 0, 0.26) 0.1em 0.1em 0.2em;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+section, footer{
+    padding: 54px 0px ;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header{
+    padding-top: 40px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul > a{
+    color: white;
+    margin: 0 25px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+nav > ul > a:not(.btn)::after{
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: .5s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+
+}
+
+nav .menu-icon{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner h1, p{
+    color: white;
+}
+
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: #275d9e;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner .banner-text{
+    margin: 100px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner-text h1{
+    font-size: 96px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    margin: 18px 0px;
+}
+
+.contatos{
+    text-align: center;
+    display: block;
+}
+    
+
+.contatos h1{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 56px;
+}
+
+.nomes{
+    border-bottom: 1px solid #0d0d68;
+    display: inline-block;
+    margin: 40px;
+}
+
+.nomes img{
+    width: 800px;
+}
+
+.footer{
+    background-color: #0b0b30;
+    text-align: center;
+    color: white;
+}
+
+.footer i{
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0b0b30;
+    font-size: 25px;
+    margin: 0px 15px;
+}
+
+.links h1{
+    display: inline-flex;
+}
+
+.footer i:hover{
+    transition: .22s;
+    box-shadow: 0px 0px 10px 3px white;
+}
+
+.footer p{
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.links > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media(max-width:500px){ 
+    header {
+        padding: 0;
+    }
+
+    header .container{
+        background-color: #0b0b30;
+        padding: 0 5%;
+    }
+
+    header .container nav{
+        padding-top: 40px;
+    }
+
+    .banner-text h1{
+        font-size: 55px;
+    }
+
+    .banner-text p{
+        font-size: 15px;
+    }
+
+    .contatos h1{
+        font-size: 45px;
+    }
+
+    .btn{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .img img{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0b0b30;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a{
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+
+    nav .menu-icon{
+        display: block;
+    }
+
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 44px;
+        right: 32px;
+        cursor: pointer;
+    }
+}

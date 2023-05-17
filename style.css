@@ -236,7 +236,7 @@ nav .close-icon{
 #sobre .more-text3 p{
     font-size: 22px;
     margin: 5px 0 10px 0;
-    text-align: left;
+    text-align: justify;
 }
 
 #sobre .more-img3{
@@ -493,7 +493,7 @@ div img{
 
     div img{
         width: 250px;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     .clientes .container p{
