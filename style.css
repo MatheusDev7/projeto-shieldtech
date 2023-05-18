@@ -118,7 +118,6 @@ nav .close-icon{
     display: inline-block;
     text-decoration: none;
     transition: 0.2s;
-    margin-top: 20px;
 }
 
 .btn:hover{
@@ -526,8 +525,7 @@ div img{
         font-size: 20px;
         text-align: center;
     }
-    
-    
+
 }
 
 @media(max-width: 700px){
@@ -544,6 +542,7 @@ div img{
         justify-content: center;
         clip-path: circle(0% at 100% 0);
         transition: 0.7s;
+        
     }
 
     .ul.open{
