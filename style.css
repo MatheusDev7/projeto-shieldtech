@@ -239,7 +239,7 @@ nav .close-icon{
 }
 
 #sobre .more-img3{
-    width: 50%;
+    width: 100%;
 }
 
 #sobre .more-img3 img{
@@ -565,4 +565,5 @@ div img{
         right: 32px;
         cursor: pointer;
     }
+
 }
