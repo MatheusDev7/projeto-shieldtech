@@ -162,6 +162,8 @@ nav .close-icon{
 .nomes{
     border-bottom: 1px solid #0d0d683f;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     margin: 40px;
 }
 
