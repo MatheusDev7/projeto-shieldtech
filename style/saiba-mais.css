@@ -287,5 +287,6 @@ nav .close-icon{
     width: 200px;
     padding: 30px 0px;
     margin: 0px 70px;
+    cursor: pointer;
 }
 
