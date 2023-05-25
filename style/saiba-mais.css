@@ -308,7 +308,8 @@ nav .close-icon{
         font-size: 55px;
     }
 
-    .banner-text p{
+    .banner-text > p{
+        width: 400px;
         font-size: 15px;
     }
 
@@ -323,11 +324,12 @@ nav .close-icon{
     }
 
     #sobre .more-text h1{
+        font-size: 50px;
         text-align: center;
     }
 
     #sobre .more-text p{
-        font-size: 20px;
+        font-size: 18px;
         padding: 40px 5%;
         text-align: center;
     }
@@ -347,11 +349,12 @@ nav .close-icon{
     }
 
     #sobre1 .more-text1 h1{
+        font-size: 50px;
         text-align: center;
     }
 
     #sobre1 .more-text1 p{
-        font-size: 20px;
+        font-size: 18px;
         padding: 40px 10%;
         text-align: center;
     }
@@ -363,6 +366,13 @@ nav .close-icon{
         align-items: center;
     }
 
+    #serviços h1{
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
     #serviços {
         justify-content: center;
         align-items: center;
@@ -371,7 +381,7 @@ nav .close-icon{
 
     #serviços .container{
         background-color: #0b0b30;
-        padding: 40px 20%;
+        padding: 40px 15%;
         justify-content: center;
         align-items: center;
     }
