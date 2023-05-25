@@ -209,6 +209,10 @@ nav .close-icon{
 }
 
 @media(max-width:500px){ 
+    h1{
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+    }
+    
     header {
         padding: 0;
     }
