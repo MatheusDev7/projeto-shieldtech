@@ -290,6 +290,93 @@ nav .close-icon{
     cursor: pointer;
 }
 
+@media(max-width:560px){ 
+    header {
+        padding: 0;
+    }
+
+    header .container{
+        background-color: #0b0b30;
+        padding: 0 5%;
+    }
+
+    header .container nav{
+        padding-top: 40px;
+    }
+
+    .banner-text h1{
+        font-size: 55px;
+    }
+
+    .banner-text p{
+        font-size: 15px;
+    }
+
+    #sobre .container{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobre .more-text {
+        width: 100%;
+    }
+
+    #sobre .more-text h1{
+        text-align: center;
+    }
+
+    #sobre .more-text p{
+        font-size: 20px;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    #sobre .more-img{
+        width: 100%;
+    }
+
+    #sobre1 .container1{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobre1 .more-text1 {
+        width: 100%;
+    }
+
+    #sobre1 .more-text1 h1{
+        text-align: center;
+    }
+
+    #sobre1 .more-text1 p{
+        font-size: 20px;
+        padding: 40px 10%;
+        text-align: center;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #serviços {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    #serviços .container{
+        background-color: #0b0b30;
+        padding: 40px 20%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media(max-width: 700px){
     .ul{
         position: fixed;
